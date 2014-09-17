@@ -1,0 +1,18 @@
+
+<div ng-controller="View1Ctrl">
+
+<!-- <p>This is the partial for view 1.</p> -->
+<h4 align="center">This is an Akan Name Generator.</h4>
+<table align="center" border=1 background-color="blue"><tr><td>
+	<p>Enter your date of birth: <input align="center" type="text" ng-model="Obj.dayOfBirth">{{Obj.dayOfBirth}}</p></td><tr>
+<!-- <p>Enter your Gender: <input type="text" ng-model="Obj.gender"></p> -->
+<!-- <p>Gender: <input type="text" ng-model="gender"></p> -->
+<!-- <p><input type="button" value="getDay" ng-model="dateOfBirth"></p> -->
+<tr><td>Your Akan Name is:<input align="center" type="text" value={{Obj|filterakanName}} ></td></tr>
+<!-- <p>Day:{{Obj.dayOfBirth}}</p>
+<p>Day:{{Obj.gender}}</p> -->
+<tr><td><fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></td></tr>
+</table>
+<div id="status" align="center">
+</div>
+</div>
